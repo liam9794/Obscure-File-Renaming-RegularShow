@@ -2,6 +2,7 @@ import os
 import re
 
 ogDir = input("What is the working directory?: ")
+ogDir = ogDir.strip('"').strip("'")
 
 os.chdir(ogDir)
 
@@ -23,5 +24,6 @@ for currDir in os.listdir(ogDir):
 			tempName = tempName.split('-')[0] + ".mp4"
 			episodeName = re.sub(r'([a-z])([A-Z])', r'\1 \2', tempName.split('.')[0]) + ".mp4"
 		newFilename = "S" + str(seasonNum) + " E" + str(episodeNum) + " - " + episodeName
+		os.rename(currFile, newFilename)
 		print("Renamed file from \"" + currFile + "\" to \"" + newFilename + "\"")
 	os.chdir("..")
