@@ -5,6 +5,6 @@ I wanted to rename all of the episodes of Regular Show to follow the same naming
 I didn't want to edit 261 files by hand.
 I like coding.
 
-I tested it on season 2 since it has a handful of renamed episodes, and a handful that aren't.
-I also made sure it recurrs through directories correctly even though season 2 was the only directory with files in it.
-I will test it on the full 8 seasons later, and update the README!
+It's tested on all 8 seasons and it works great! 
+It's not PERFECT, for example titles with numbers won't be spaced correctly, but I can't satisfy every single case. For example, "1000th" shouldn't be spaced, but "150 Piece" should be spaced. "TGITuesday" should be spaced like "TGI Tuesday", not "T G I Tuesday" but "ARegular" should be "A Regular".
+I'm happy. Maybe I edit ten episodes by hand instead of 261 *shrug*.
