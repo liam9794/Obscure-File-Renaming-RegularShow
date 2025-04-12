@@ -12,7 +12,7 @@ for currDir in os.listdir(ogDir):	#For each folder (season)
 	match = re.search(r'\d+', currDir)	#Takes the season number from the folder name
 	seasonNum = match.group()
 	files = os.listdir()
-	files.sort(key=lambda x: float(re.search(r'E(\d+(\.\d+)?)', x).group(1)))	#I don't like doing 1, 10, 11, ... 19, then 2, 20, 21, ...29, 3... So I sort first to do a normal 1, 2, 3, etc.
+	#files.sort(key=lambda x: float(re.search(r'E(\d+(\.\d+)?)', x).group(1)))	#I don't like doing 1, 10, 11, ... 19, then 2, 20, 21, ...29, 3... So I sort first to do a normal 1, 2, 3, etc.
 	for currFile in files:	#For each file in the folder
 		if re.search(r"S\d +E\d+", currFile):
 			print("This file name has already been reformatted!: ", currFile)
